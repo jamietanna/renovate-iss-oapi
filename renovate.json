@@ -6,7 +6,7 @@
 			"matchPackagePatterns": [
 				"github.com/deepmap/oapi-codegen"
 			],
-			"replacementNameTemplate": "github.com/oapi-codegen/oapi-codegen/v2",
+			"replacementName": "github.com/oapi-codegen/oapi-codegen/v2",
 			"replacementVersion": "v2.3.0"
 		}
 	]
