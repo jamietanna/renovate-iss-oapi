@@ -1,13 +1,17 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"packageRules": [
-		{
-			"description": "oapi-codegen v2.3.0 is the first release after migrating to a community-owned GitHub organisation",
-			"matchPackagePatterns": [
-				"github.com/deepmap/oapi-codegen"
-			],
-			"replacementName": "github.com/oapi-codegen/oapi-codegen/v2",
-			"replacementVersion": "v2.3.0"
-		}
-	]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "oapi-codegen v2.3.0 is the first release after migrating to a community-owned GitHub organisation",
+      "matchPackagePatterns": [
+        "github.com/deepmap/oapi-codegen"
+      ],
+      "replacementName": "github.com/oapi-codegen/oapi-codegen/v2",
+      "replacementVersion": "v2.3.0"
+    }
+  ],
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths"
+  ]
 }
