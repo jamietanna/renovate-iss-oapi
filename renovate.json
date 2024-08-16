@@ -13,5 +13,7 @@
   "postUpdateOptions": [
     "gomodTidy",
     "gomodUpdateImportPaths"
-  ]
+  ],
+  "prConcurrentLimit": 1000,
+  "branchConcurrentLimit": 1000
 }
